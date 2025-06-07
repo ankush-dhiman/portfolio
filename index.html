@@ -1,27 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ankush Dhiman | Mobile Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ankush Dhiman | Mobile Engineer</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
-<body>
-  <header>
-    <h1>Ankush Dhiman</h1>
-    <p>Flutter & Android Mobile Developer</p>
-  </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>I’m a Mobile Developer with over 6 years of experience — focusing on Flutter and Android...</p>
-  </section>
+<body class="light">
 
-  <!-- Add your projects, skills, contact as before -->
+  <div class="container">
+    <aside class="sidebar">
+      <img src="images/profile.jpg" alt="Ankush Dhiman" class="profile-pic" />
+      <h2>Ankush Dhiman</h2>
+      <p>Flutter & Android Developer</p>
+      <div class="social-icons">
+        <a href="mailto:dhimanankush72@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-stack-overflow"></i></a>
+      </div>
 
-  <footer>
-    &copy; 2025 Ankush Dhiman — Built with HTML & CSS
-  </footer>
+      <nav class="nav">
+        <a href="#">About Me</a>
+        <a href="#">Experience</a>
+        <a href="#">Skills</a>
+        <a href="#">Projects</a>
+      </nav>
+
+      <button class="hire-btn">Hire Me</button>
+      <label class="toggle">
+        <span>Dark Mode</span>
+        <input type="checkbox" id="themeToggle">
+        <span class="slider"></span>
+      </label>
+    </aside>
+
+    <main class="main-content">
+      <header>
+        <h1>Ankush Dhiman</h1>
+        <h3>Sr Software Engineer</h3>
+        <p>
+          I’m a mobile software engineer with 6 years of experience in building high-quality Flutter and Android apps.
+          I’ve led the migration of complex native apps to Flutter, managed multi-brand flavors, and
+          delivered scalable cross-platform solutions. 
+        </p>
+        <div class="buttons">
+          <button class="view-btn green">View Portfolio</button>
+          <button class="view-btn dark">Download Resume</button>
+        </div>
+      </header>
+
+
+      <section class="what-i-do">
+        <h2>Skills</h2>
+        <div class="skills">
+          <div class="skill">
+            <i class="fas fa-code"></i>
+            <h4>Languages</h4>
+            <p>Kotlin, Dart, Java, C++</p>
+          </div>
+          <div class="skill">
+            <i class="fab fa-flutter"></i>
+            <h4>Frameworks</h4>
+            <p>Flutter, Android SDK</p>
+          </div>
+          <div class="skill">
+            <i class="fas fa-project-diagram"></i>
+            <h4>Architectures</h4>
+            <p>MVVM, Clean Architecture</p>
+          </div>
+          <div class="skill">
+            <i class="fas fa-tools"></i>
+            <h4>Version Control & CI/CD Tools</h4>
+            <p>GitHub, Bitrise</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="what-i-do">
+        <h2>Projects</h2>
+        <div class="skills">
+          <div class="skill">
+            <h4>Ility</h4>
+            <p>Commercial property management software for landlords. Flutter-based, white-labeled, scalable mobile
+              solution.</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script>
+    const toggle = document.getElementById("themeToggle");
+    toggle.addEventListener("change", () => {
+      document.body.classList.toggle("dark");
+    });
+  </script>
 </body>
+
 </html>
